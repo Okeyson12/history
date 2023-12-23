@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url();
+    background-size: cover;
+    background-position: inherit;
+    font-family: Rubik;
+}
+.menu-bar{
+    background-color: rgb(0, 100, 0);
+    text-align: center;
+    height: 100px;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.menu-bar ul li{
+    width: 100px;
+    margin: 10px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: rgb(230, 161, 33);
+}
+.active, .menu-bar ul li:hover{
+background: #2bab0d;
+border-radius: 3px;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #fff;
+    line-height: 57px;
+    transition: .5s;
+}
+.sub-menu-1{
+    display: none;
+}
+.sub-menu-1 ul li a{
+    color: #fff;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(12, 235, 12);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 100px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: #b2ff0b;
+    background-color: red;
+}
+@media only screen and (max-width:480px){
+.menu-bar{
+    font-size: 0.9em;
+    padding: 0;
+    margin: 0;
+}
+.sub-menu-1{
+    font-size: 0.3em;
+    padding: 0;
+    margin: 0;
+}
+.menu-bar ul li{
+    width: 35px;
+    font-size: 0.7em;
+    padding: 0;
+    margin: o;
+}
+.menu-bar ul{
+    font-size: 0.9em;
+    padding: 0;
+    margin: 0;
+}
+.menu-bar ul li a{
+font-size: 0.9em;
+padding: 0;
+margin: 0;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    font-size: 0.3em;
+    padding: 0;
+    margin: 0;
+}
+}
+.paper-plane-sharp{
+    float: right;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    line-height:;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    background-color: #82fd66;
+    color: #fff;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 6px;
+    margin-top: 200px;
+}
+p.subheader{
+    font-weight: 800;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: ;
+    font-size: larger;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #faf9f9;
+    background-color: #2bab0d;
+    width: fit-content;
+    height: fit-content;
+}
+img{
+    padding: 3pt;
+    float: left;
+    height: 50vh;
+    width: 20vw;
+}
+p a{
+    text-decoration: none;
+}
+a:hover, a:visited{
+    color: blue;
+}
+a:hover, a:active{
+    color: red;
+}
+.footer{
+    font-size: small;
+    text-align: center;
+    background: rgb(0, 100, 0);
+    color: #fff;
+    width: 100%;
+    padding: 20pt;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+span{
+    color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform:uppercase;
+    font-size: larger;
+    width: fit-content;
+
+}
+.click{
+    background-image: radial-gradient(rgb(252, 240, 169), rgb(48, 109, 7), yellow);
+    color: white;
+    font-family: caprasimo cursive;
+    font-family: 'Cormorant Garamond', serif;
+    padding: 8px;
+    font-size: large;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 6px;
+    
+}
+p{
+    text-align: justify;
+}
+#nav a{
+    text-decoration: none;
+}
+#content a{
+    text-decoration: none;
+    font-weight: bold;
+}
+#nav ul{
+    list-style: none;
+    margin: 12px 0px 0px;
+    padding: 0px;
+}
+#nav li{
+    border-bottom: 1px solid #ffffff;
+}
+#nav li a:link, #nav li a:visited{
+    font-size: 10pt;
+    font-weight: bold;
+    display: block;
+    padding: 3px 0px 3px 3px;
+    background-color: #628794;
+    color: #ffffff;
+    line-height: 20px;
+}
+#nav li a:hover, #nav li a:active{
+    font-size: 10pt;
+    font-weight: bold;
+    display: block;
+    padding: 3px 0px 3px 3px;
+    background-color: #6cac46;
+    color: #000000;
+}
+#nav{
+    width: 100px;
+    float: left;
+    margin-top: 12px;
+    margin-right: 18px;
+}
+#content{
+    width: 500px;
+    float: left;
+    margin-left: 50px;
+}
+#content ul{
+    list-style: none;
+}
